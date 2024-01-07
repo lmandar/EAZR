@@ -15,9 +15,9 @@ app.use(bodyParser.json());
 
 app.enable('trust proxy');
 
-app.use('/api/home', require('./components/home/home.controller'));  // home page rautes
-app.use('/api/history', require('./components/history/history.controller'));  // home page rautes
-app.use('/api/cart', require('./components/cart/cart.controller'));  // home page rautes
+app.use('/api/home', require('./components/home/home.controller'));  // home page raute
+app.use('/api/history', require('./components/history/history.controller'));  // history page raute
+app.use('/api/cart', require('./components/cart/cart.controller'));  // cart page raute
 
 //global error handler
 app.use(errorHandler);  

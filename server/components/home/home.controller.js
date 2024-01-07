@@ -12,9 +12,7 @@ function fetcImg(req, res, next) {
         .then(data => {
             req.outputData = data
             next()
-        }).catch(err => {
-            next(err)  
-        })
+        }).catch(err => { next(err)})
 }
 
 
